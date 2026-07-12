@@ -1,3 +1,7 @@
 .venv/
 repo-llms/
 plan.md
+__pycache__/
+markdowns/
+.pytest_cache
+.mypy_cache
