@@ -1,6 +1,6 @@
 UV = uv
 PYTHON = $(UV) run python
-
+TEST = $(PYTHON) -m pytest -v -s --no-header
 all: install
 
 install:
@@ -11,7 +11,8 @@ run: install
 
 run-tests: install
 	@echo "Running tests..."
-	$(PYTHON) -m tests.test_tokenizer
+	$(TEST) tests/test_tokenizer.py
+	$(TEST) tests/test_dataloader.py
 	@echo "All tests passed!"
 
 

@@ -1,5 +1,4 @@
 from src.tokenizer import Tokenizer
-import pytest
 
 
 def test_tokenizer_encode_known_words() -> None:
@@ -57,13 +56,3 @@ def test_tokenizer_encode_decode() -> None:
     print(f"reconstructed text: {reconstructed_text}\n")
 
     assert reconstructed_text == original_text
-
-
-if __name__ == "__main__":
-    from pathlib import Path
-
-    path_obj = Path(__file__)
-    print(f"\n=== TESTING {path_obj.stem}.py ===")
-
-    pytest.main(["-v", "-s", "--no-header", "-o",
-                 "python_classes=*Suite", __file__])
