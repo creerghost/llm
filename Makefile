@@ -14,6 +14,7 @@ run-tests: install
 	$(TEST) tests/test_tokenizer.py
 	$(TEST) tests/test_dataloader.py
 	$(TEST) tests/test_attention.py
+	$(TEST) tests/test_model.py
 	@echo "All tests passed!"
 
 
