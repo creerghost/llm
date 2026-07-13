@@ -13,6 +13,7 @@ run-tests: install
 	@echo "Running tests..."
 	$(TEST) tests/test_tokenizer.py
 	$(TEST) tests/test_dataloader.py
+	$(TEST) tests/test_attention.py
 	@echo "All tests passed!"
 
 
